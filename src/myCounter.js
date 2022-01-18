@@ -23,8 +23,13 @@ const myCounter = () => {
     for (var counter = 2; counter <= 3; counter += 1) {
       myArray.push(counter);
     }
+    const array = [1, 2, 3, 2, 2, 3, 3, 2, 3];
+    for (let index of array) {
+      myArray.push(index);
+    }
   }
   return myArray;
 };
+console.log(myCounter());
 
 module.exports = myCounter;
